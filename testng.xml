@@ -1,0 +1,28 @@
+<suite name="TestNG Suite" parallel="false">
+    <suite-files>
+        <suite-file path="testng.xml"/>
+    </suite-files>
+
+    <listeners>
+        <listener class-name="listeners.ScreenshotListener" />
+    </listeners>
+
+    <test name="Google Search Tests">
+        <classes>
+            <class name="tests.GoogleSearchTest" />
+        </classes>
+    </test>
+
+    <test name="Internet HeroKu Web App Test">
+        <classes>
+            <class name="tests.InternetHeroKuAppTest" />
+        </classes>
+    </test>
+
+    <test name="Random Cat Fact API Test">
+        <classes>
+            <class name="tests.RandomFactAPITest" />
+        </classes>
+    </test>
+
+</suite>
